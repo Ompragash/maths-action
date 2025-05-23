@@ -10,7 +10,7 @@ try {
   const product = input1 * input2;
 
   // Create a custom message
-  const message = `The inputs are ${input1} and ${newinput}. Sum is ${sum}, product is ${product}.`;
+  const message = `The inputs are ${input1} and ${input2}. Sum is ${sum}, product is ${product}.`;
 
   // Set outputs
   core.setOutput('sum', sum);
