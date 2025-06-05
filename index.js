@@ -3,7 +3,7 @@ const core = require('@actions/core');
 try {
   // Get inputs
   const input1 = parseInt(core.getInput('input1'));
-  const input2 = parseInt(core.getInput('input2'));
+  const input2 = parseInt(core.getInput('inpt2')); // BUG: typo in input name ('inpt2' instead of 'input2')
 
   // Perform calculations
   const sum = input1 + input2;
@@ -19,4 +19,3 @@ try {
 } catch (error) {
   core.setFailed(error.message);
 }
-
